@@ -1,0 +1,6 @@
+let mass = 200;
+let height = 5.10
+
+let bmi = mass / height ** 2
+
+console.log(bmi)
