@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>Book Feedback Form</h2>
+        <label>First Name: </label><input type="text" name="firstname" minlength="1" maxlength="30" required>
+        <br><br>
+        </label>Last Name: </label><input type="text" name="lastname" minlength="1" maxlength="30" required>
+        <br><br>
+        <label>Book: </label><input type="text" name="book" minlength="1" maxlength="30" required>
+        <br><br>
+        <input type="radio" id="like" name="feedback" value="like" required>
+        <label for="like">Like</label>
+        <input type="radio" id="dislike" name="feedback" value="dislike" required>
+        <label for="dislike">Dislike</label>
+        <br><br>
+        <h3>Comments</h3>
+        <textarea name="comments" rows="4" cols="50" minlength="1" maxlength="250" required></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

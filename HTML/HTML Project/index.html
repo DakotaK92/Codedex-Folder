@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakota's Dawgs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #e2e2e2;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="./images/hot-dog-logo.png" alt="Logo" width="100">
+        <h1>Dakota's Dawgs</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order-form">Order Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Menu</h2>
+            <article>
+                <img src="./images/plan-dog.jpg" width="100">
+                <h3>Classic Hot Dog</h3>
+                <p>A traditional hot dog with mustard, ketchup, and relish.</p>
+            </article>
+            <article>
+                <img src="./images/chili-cheese-dog.jpg" width="100">
+                <h3>Chili Hot Dog</h3>
+                <p>A chili hot dog with spicy chili and cheese.</p>
+            </article>
+            <article>
+                <img src="./images/pigs-blanket.jpg" width="100">
+                <h3>Pigs in a Blanket</h3>
+                <p>Delicious mini sausages wrapped in flaky pastry.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Place Your Order</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="hotdog">Choose a hot dog condiment:</label><br>
+                Ketchup<input type="radio" name="ketchup" value="classic">
+                <br><br>
+                Mustard<input type="radio" name="mustard" value="classic">
+                <br><br>
+
+
+                <textarea id="special-requests" name="special-requests" rows="4" cols="50" placeholder="Any special requests?"></textarea><br><br>
+
+                <label for="quantity">Quantity:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" max="10"><br><br>
+
+                <input type="submit" value="Submit Order">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with love by Dakota</p>
+    </footer>
+</body>
+</html>
