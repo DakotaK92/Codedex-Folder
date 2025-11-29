@@ -1,0 +1,1 @@
+SELECT AVG(duration) from playlist;
